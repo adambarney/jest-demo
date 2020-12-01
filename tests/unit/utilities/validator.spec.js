@@ -2,6 +2,27 @@ import {validateZip} from "../../../src/utilities/validator";
 
 const $ = require('jquery');
 
+beforeEach(() => {
+    document.body.innerHTML='<div><button id="submit-button"/></div>'
+})
+describe('zip code validator', () => {
+    it('should return true when valid zip code is supplied', () => {
+        expect(validateZip('90210')).toBeTruthy()
+    });
+
+    it.each(['1234', '123456'])('should return false when zip code is invalid length (%s)', (zip) => {
+        expect(validateZip(zip)).toBeFalsy()
+    });
+
+    it('should disable submit button when zip code is invalid', () => {
+        validateZip('BADZIPCODE')
+        expect(document.getElementById('submit-button').disabled).toBeTruthy()
+    });
+});
+
+
+
+
 // describe('zip code validator', () => {
 //     it('should return true when zip code is valid', () => {
 //         expect(validateZip('90210')).toBeTruthy()
