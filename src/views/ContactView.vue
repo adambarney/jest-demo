@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <AddressBook></AddressBook>
+    <Contacts></Contacts>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import AddressBook from '@/components/AddressBook.vue'
+import Contacts from '@/components/Contacts.vue'
 
 export default {
-  name: 'Address',
+  name: 'ContactView',
   components: {
-    AddressBook
+    Contacts
   }
 }
 </script>
