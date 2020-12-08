@@ -1,12 +1,12 @@
-const $ = require('jquery');
-
-export function validateZip(zip) {
-    if (zip.length !== 5) {
-        // disable submit button
-        document.getElementById('submit-button').disabled = true
-        // $('#submit-button').attr('disabled', true)
-        return false;
-    } else {
-        return true;
-    }
+export function validatePhone(phoneNumber) {
 }
+
+
+// export function validatePhone(phoneNumber) {
+//
+//   if (phoneNumber.length === 10) {
+//     document.getElementById('submit-button').disabled = false
+//     return true
+//   }
+//   return false
+// }

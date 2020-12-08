@@ -13,7 +13,7 @@
                 label="Phone Number"
                 v-model="phoneNumber">
             </v-text-field>
-            <v-btn>Save</v-btn>
+            <v-btn data-test="submit-button">Save</v-btn>
           </v-form>
         </v-col>
         <v-col>
@@ -35,10 +35,7 @@ export default {
         {text: 'Name', value: 'name'},
         {text: 'Phone Number', value: 'phoneNumber'}
       ],
-      allContacts: [
-        {name: 'Joe', phoneNumber: '5131234567'},
-        {name: 'Mike', phoneNumber: '5132223322'}
-      ]
+      allContacts: []
     }
   }
 }
