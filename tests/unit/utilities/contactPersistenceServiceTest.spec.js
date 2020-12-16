@@ -1,14 +1,29 @@
 import {saveContact} from '../../../src/utilities/contactPersistenceService'
 import axios from 'axios'
+import {validatePhone} from '../../../src/utilities/validator'
 
 
+jest.mock('axios')
 
 
+describe('saveContact', () => {
+  it('should return all contacts', async () => {
+    let existingContact = {
+      name: 'Joe',
+      phoneNumber: '5131234567'
+    }
 
+    let newContact = {
+      name: 'Jenny',
+      phoneNumber: '5138675309'
+    }
+    let expectedContacts = [existingContact, newContact]
+    axios.post.mockImplementationOnce(() => Promise.resolve({data: expectedContacts}))
+    await expect(saveContact(newContact)).resolves.toEqual(expectedContacts)
+    expect(axios.post).toHaveBeenCalledWith('http://localhost:8080/contact', newContact)
 
-
-
-
+  })
+})
 
 
 

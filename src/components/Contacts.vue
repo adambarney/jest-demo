@@ -7,7 +7,7 @@
           <v-form>
             <v-text-field
                 data-test="name-input"
-                label="Full Name"
+                label="Name"
                 v-model="contactName">
             </v-text-field>
             <v-text-field

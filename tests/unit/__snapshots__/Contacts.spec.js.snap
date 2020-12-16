@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contacts should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h1>
+      Contacts
+    </h1>
+     
+    <div
+      class="row"
+    >
+      <div
+        class="col col-3"
+      >
+        <form
+          class="v-form"
+          novalidate="novalidate"
+        >
+          <div
+            class="v-input theme--light v-text-field"
+          >
+            <div
+              class="v-input__control"
+            >
+              <div
+                class="v-input__slot"
+              >
+                <div
+                  class="v-text-field__slot"
+                >
+                  <label
+                    class="v-label theme--light"
+                    for="input-3"
+                    style="left: 0px; position: absolute;"
+                  >
+                    Name
+                  </label>
+                  <input
+                    data-test="name-input"
+                    id="input-3"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-text-field__details"
+              >
+                <div
+                  class="v-messages theme--light"
+                >
+                  <transition-group-stub
+                    class="v-messages__wrapper"
+                    name="message-transition"
+                    tag="div"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="v-input theme--light v-text-field"
+          >
+            <div
+              class="v-input__control"
+            >
+              <div
+                class="v-input__slot"
+              >
+                <div
+                  class="v-text-field__slot"
+                >
+                  <label
+                    class="v-label theme--light"
+                    for="input-6"
+                    style="left: 0px; position: absolute;"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    data-test="phone-input"
+                    id="input-6"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-text-field__details"
+              >
+                <div
+                  class="v-messages theme--light"
+                >
+                  <transition-group-stub
+                    class="v-messages__wrapper"
+                    name="message-transition"
+                    tag="div"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          <button
+            class="v-btn v-btn--contained theme--light v-size--default"
+            data-test="submit-button"
+            id="submit-button"
+            type="button"
+          >
+            <span
+              class="v-btn__content"
+            >
+              Save
+          
+            </span>
+          </button>
+        </form>
+      </div>
+       
+      <div
+        class="col"
+      >
+        <div
+          class="v-data-table v-data-table--has-bottom theme--light"
+          data-test="contact-table"
+        >
+          <div
+            class="v-data-table__wrapper"
+          >
+            <table>
+              <colgroup>
+                <col
+                  class=""
+                />
+                <col
+                  class=""
+                />
+              </colgroup>
+              <thead
+                class="v-data-table-header"
+              >
+                <tr>
+                  <th
+                    aria-label="Name: Not sorted. Activate to sort ascending."
+                    aria-sort="none"
+                    class="text-start sortable"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    <span>
+                      Name
+                    </span>
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light"
+                      style="font-size: 18px;"
+                    />
+                  </th>
+                  <th
+                    aria-label="Phone Number: Not sorted. Activate to sort ascending."
+                    aria-sort="none"
+                    class="text-start sortable"
+                    role="columnheader"
+                    scope="col"
+                  >
+                    <span>
+                      Phone Number
+                    </span>
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light"
+                      style="font-size: 18px;"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class=""
+                >
+                  <td
+                    class="text-start"
+                  >
+                    Joe
+                  </td>
+                  <td
+                    class="text-start"
+                  >
+                    5131234567
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="v-data-footer"
+          >
+            <div
+              class="v-data-footer__select"
+            >
+              Rows per page:
+              <div
+                class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select"
+              >
+                <div
+                  class="v-input__control"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-owns="list-17"
+                    class="v-input__slot"
+                    role="button"
+                  >
+                    <div
+                      class="v-select__slot"
+                    >
+                      <div
+                        class="v-select__selections"
+                      >
+                        <div
+                          class="v-select__selection v-select__selection--comma"
+                        >
+                          10
+                        </div>
+                        <input
+                          aria-label="Rows per page:"
+                          aria-readonly="false"
+                          autocomplete="off"
+                          id="input-17"
+                          readonly="readonly"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="v-input__append-inner"
+                      >
+                        <div
+                          class="v-input__icon v-input__icon--append"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="v-icon notranslate mdi mdi-menu-down theme--light"
+                          />
+                        </div>
+                      </div>
+                      <input
+                        type="hidden"
+                        value="10"
+                      />
+                    </div>
+                    <div
+                      class="v-menu"
+                    >
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="v-data-footer__pagination"
+            >
+              1-1 of 1
+            </div>
+            <div
+              class="v-data-footer__icons-before"
+            >
+              <button
+                aria-label="Previous page"
+                class="v-btn v-btn--disabled v-btn--flat v-btn--icon v-btn--round v-btn--text theme--light v-size--default"
+                disabled="disabled"
+                type="button"
+              >
+                <span
+                  class="v-btn__content"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mdi mdi-chevron-left theme--light"
+                  />
+                </span>
+              </button>
+            </div>
+            <div
+              class="v-data-footer__icons-after"
+            >
+              <button
+                aria-label="Next page"
+                class="v-btn v-btn--disabled v-btn--flat v-btn--icon v-btn--round v-btn--text theme--light v-size--default"
+                disabled="disabled"
+                type="button"
+              >
+                <span
+                  class="v-btn__content"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mdi mdi-chevron-right theme--light"
+                  />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

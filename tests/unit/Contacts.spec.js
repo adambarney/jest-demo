@@ -54,8 +54,9 @@ describe('Save button', () => {
   })
 })
 
-// describe('contacts', () => {
-//   it('should render correctly', () => {
-//     expect(wrapper.element).toMatchSnapshot()
-//   })
-// })
+
+describe('contacts', () => {
+  it('should render correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})
