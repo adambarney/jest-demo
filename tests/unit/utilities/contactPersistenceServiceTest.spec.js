@@ -7,7 +7,7 @@ import axios from 'axios'
 //   jest.resetAllMocks()
 // })
 //
-// describe('save contact', function() {
+// describe('saveContact', () => {
 //   it('should return updated list of contacts', async () => {
 //     let existingContact = {
 //       name: 'Joe',
@@ -18,11 +18,9 @@ import axios from 'axios'
 //       name: 'Jenny',
 //       phoneNumber: '5138675309'
 //     }
-//
 //     let expectedContacts = [existingContact, newContact]
-//
 //     axios.post.mockImplementationOnce(() => Promise.resolve({data: expectedContacts}))
 //     await expect(saveContact(newContact)).resolves.toEqual(expectedContacts)
-//     expect(axios.post).toHaveBeenLastCalledWith('localhost:8080/contact', newContact)
-//   });
-// });
+//     expect(axios.post).toHaveBeenCalledWith('http://localhost:8080/contact', newContact)
+//   })
+// })

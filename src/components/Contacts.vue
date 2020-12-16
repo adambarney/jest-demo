@@ -6,18 +6,25 @@
         <v-col cols="3">
           <v-form>
             <v-text-field
-                label="Name"
-                v-model="name">
+                data-test="name-input"
+                label="Full Name"
+                v-model="contactName">
             </v-text-field>
             <v-text-field
+                data-test="phone-input"
                 label="Phone Number"
                 v-model="phoneNumber">
             </v-text-field>
-            <v-btn data-test="submit-button">Save</v-btn>
+            <v-btn data-test="submit-button"
+                   id="submit-button"
+                   @click="saveNewContact">Save
+            </v-btn>
           </v-form>
         </v-col>
         <v-col>
-          <v-data-table :headers="headers" :items="allContacts" />
+          <v-data-table data-test="contact-table"
+              :headers=headers
+              :items=allContacts></v-data-table>
         </v-col>
       </v-row>
     </v-container>
@@ -25,17 +32,37 @@
 </template>
 
 <script>
+import {getContacts, saveContact} from '../utilities/contactPersistenceService'
+
 export default {
   name: 'Contacts',
-  data: function() {
+  data: function () {
     return {
-      name: '',
+      contactName: '',
       phoneNumber: '',
       headers: [
         {text: 'Name', value: 'name'},
         {text: 'Phone Number', value: 'phoneNumber'}
       ],
       allContacts: []
+    }
+  },
+  mounted() {
+    this.getExistingContacts()
+  },
+  methods: {
+    saveNewContact: function () {
+      saveContact({
+        name: this.contactName,
+        phoneNumber: this.phoneNumber
+      }).then((response) => {
+        this.allContacts = response
+      })
+    },
+    getExistingContacts: function () {
+      getContacts().then((response) => {
+        this.allContacts = response
+      })
     }
   }
 }
