@@ -3,6 +3,42 @@ export function validatePhone(phoneNumber) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // export function validatePhone(phoneNumber) {
 //   if (phoneNumber.length === 10) {
 //     document.getElementById('save-button').disabled = false

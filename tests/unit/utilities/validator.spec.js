@@ -1,5 +1,31 @@
 import {validatePhone} from "../../../src/utilities/validator";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // beforeEach(() => {
 //   document.body.innerHTML = '<button disabled="disabled" id="save-button"></button>'
 // })
